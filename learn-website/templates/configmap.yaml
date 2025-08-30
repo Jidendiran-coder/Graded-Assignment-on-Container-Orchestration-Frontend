@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+    name: learn-website-config
+    namespace: lp
+data:
+    REACT_APP_API_BASE_URL: {{ .Values.api_endpoint }}

@@ -1,0 +1,12 @@
+replicaCount:
+
+image:
+  repository: 
+  tag:
+
+service:
+  port:
+  targetPort:
+  type:
+
+api_endpoint:
