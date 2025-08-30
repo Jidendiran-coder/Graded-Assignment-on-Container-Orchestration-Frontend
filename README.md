@@ -134,11 +134,11 @@ kubectl config use-context arn:aws:eks:ap-south-1:<account_id>:cluster/jide-clus
 
 #### Output EKS Cluster - Listing Pods, SVC, Helm
 
-![alt text](output/eks_cli_output.png)
+<img width="2352" height="643" alt="pic-1" src="https://github.com/user-attachments/assets/0f96b674-94df-4f84-a86a-19bdf848e313" />
 
 #### Output EKS Cluster - Helm Deployment history
 
-![alt text](output/website_helm_history.png)
+<img width="1850" height="160" alt="Pic-2" src="https://github.com/user-attachments/assets/45ada88d-e8c7-4d5e-aff8-02d431a2cefc" />
 
 
 ## ⚙️ Jenkins Configuration for Kubectl
