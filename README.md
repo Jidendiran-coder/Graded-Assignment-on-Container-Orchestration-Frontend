@@ -196,7 +196,7 @@ This creates an **AWS ELB** exposing the API publicly.
 
 #### Output - AWS Load balancer
 
-![alt text](output/load_balancer.png)
+<img width="2352" height="647" alt="Pic-5" src="https://github.com/user-attachments/assets/431cf4d5-f9d4-4803-b8d5-afc4a187ff0c" />
 
 
 ### ✅ Service Port Configuration:
