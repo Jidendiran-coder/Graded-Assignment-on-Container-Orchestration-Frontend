@@ -1,4 +1,4 @@
-# 🎯 Learner Website Frontend – Kubernetes Deployment
+# 🎯 Frontend Website – Kubernetes Deployment
 
 This project is a ReactJS website built with Node.js and deployed to AWS EKS using Jenkins, Docker, and Helm. 
 It also supports running locally for development and testing.
@@ -43,19 +43,19 @@ The application requires these environment variables (in Kubernetes, provided vi
 To build and run locally:
 
 ```
-docker build -t thirumalai-b10/learn-website:latest .
+docker build -t jidendiran-b10/learn-website:latest .
 ```
 
 ### 2️⃣ Tag Image for ECR
 
 ```
-docker tag thirumalai-b10/learn-website:latest 975050024946.dkr.ecr.ap-south-1.amazonaws.com/thirumalai-b10/learn-website:latest
+docker tag thirumalai-b10/learn-website:latest 975050024946.dkr.ecr.ap-south-1.amazonaws.com/jidendiran-b10/learn-website:latest
 ```
 
 ### 3️⃣ Push Image to ECR
 
 ```
-docker push 975050024946.dkr.ecr.ap-south-1.amazonaws.com/thirumalai-b10/learn-website:latest
+docker push 975050024946.dkr.ecr.ap-south-1.amazonaws.com/jidendiran-b10/learn-website:latest
 ```
 
 ### 4️⃣ Run the Docker Container Locally (from ECR Image)
@@ -63,7 +63,7 @@ docker push 975050024946.dkr.ecr.ap-south-1.amazonaws.com/thirumalai-b10/learn-w
 ```
 docker run -d -p 3001:3001 --name -learn \
   -e REACT_APP_API_BASE_URL="<API URL>" \
-  975050024946.dkr.ecr.ap-south-1.amazonaws.com/thirumalai-b10/learn-website:latest
+  975050024946.dkr.ecr.ap-south-1.amazonaws.com/jidendiran-b10/learn-website:latest
 ```
 
 ### 5️⃣ Run the Docker Container Locally (from local build)
@@ -71,7 +71,7 @@ docker run -d -p 3001:3001 --name -learn \
 ```
 docker run -d -p 3001:3001 --name website-learn \
   -e ATLAS_URREACT_APP_API_BASE_URLI="http://localhost:3001" \
-  thirumalaipy/learnapi:1.0
+  jidendiranpy/learnapi:1.0
 ```
 
 
@@ -115,7 +115,7 @@ helm upgrade --install learn-website ./learn-website \
 
 ```
 eksctl create cluster \
-  --name thiru-cluster-1 \
+  --name jidendiran-cluster-1 \
   --region ap-south-1 \
   --node-type t2.medium \
   --zones ap-south-1a,ap-south-1b
@@ -123,13 +123,13 @@ eksctl create cluster \
 
 ### 2️⃣ Update Local Kubeconfig
 
-`aws eks update-kubeconfig --region ap-south-1 --name thiru-cluster-1`
+`aws eks update-kubeconfig --region ap-south-1 --name jidendiran-cluster-1`
 
 
 ### 2️⃣ Update Local Kubeconfig
 
 ```
-kubectl config use-context arn:aws:eks:ap-south-1:<account_id>:cluster/thiru-cluster-1
+kubectl config use-context arn:aws:eks:ap-south-1:<account_id>:cluster/jidendiran-cluster-1
 ```
 
 #### Output EKS Cluster - Listing Pods, SVC, Helm
@@ -170,9 +170,9 @@ Before running the pipeline:
 - Jenkins node has Docker installed and running.
 - Jenkins node has kubectl and helm installed.
 - Jenkins has these credentials configured:
-  - thiru-github-access (GitHub access token)
-  - thiru-access-key-id (AWS Access Key)
-  - thiru-secret-access-key (AWS Secret Key)
+  - jidendiran-github-access (GitHub access token)
+  - jidendiran-access-key-id (AWS Access Key)
+  - jidendiran-secret-access-key (AWS Secret Key)
 
 
 #### Output - Jenkin Build and Push Success to ECR with build number
