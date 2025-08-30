@@ -232,18 +232,18 @@ After deployment:
 
 #### Output - Website  working in Loadbalancer DNS end point
 
-![alt text](output/website_eks_dns.png)
+<img width="2343" height="1099" alt="Pic-6" src="https://github.com/user-attachments/assets/0da24d46-97ea-4060-b9c7-c80c8f5617c3" />
 
 #### Output - Website working in Custom end point after pointing the DNS CNAME on the domain 
 
 **Login page**
-![alt text](output/website_login.png)
+<img width="2352" height="1289" alt="Pic-7" src="https://github.com/user-attachments/assets/0b0af673-8c45-4c4a-998e-2cceefc9ba36" />
 
 **Dashboard page**
-![alt text](output/website_dashboard.png)
+<img width="2334" height="1098" alt="Pic-8" src="https://github.com/user-attachments/assets/478ca9c8-828d-45fa-983f-a4e4d222ee51" />
 
 **Users page**
-![alt text](output/website_users.png)
+<img width="2352" height="1281" alt="Pic-9" src="https://github.com/user-attachments/assets/07a2c79a-4b79-4779-87fa-c34a0d7f651f" />
 
 
 ### ✨ SSL Mapping (Optional)
