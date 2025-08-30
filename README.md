@@ -177,7 +177,7 @@ Before running the pipeline:
 
 #### Output - Jenkin Build and Push Success to ECR with build number
 
-<img width="2352" height="852" alt="Pic-3" src="https://github.com/user-attachments/assets/8d344059-77e5-48ba-8add-32690e0a0fad" />
+<img width="2352" height="852" alt="Pic-3" src="https://github.com/user-attachments/assets/fd323155-40ad-4a76-8b0c-298441218f32" />
 
 #### Output - Jenkin Pipeline Success
 
