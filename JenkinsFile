@@ -2,13 +2,13 @@ pipeline {
     agent any 
 
     environment {
-        GIT_REPO = "https://github.com/thirumalai-py/k8-learner-frontend"
+        GIT_REPO = "https://github.com/Jidendiran-coder/Graded-Assignment-on-Container-Orchestration-Frontend.git"
         AWS_REGION = "ap-south-1"
-        ECR_REPO = "975050024946.dkr.ecr.ap-south-1.amazonaws.com/thirumalai-b10/learn-website"
+        ECR_REPO = "975050024946.dkr.ecr.ap-south-1.amazonaws.com/jidendir-b10/learn-website"
         IMAGE_TAG = "dev-${BUILD_NUMBER}"
-        AWS_ACCESS_KEY_ID = credentials('thiru-access-key-id')
-        AWS_SECRET_ACCESS_KEY = credentials('thiru-secret-access-key')
-        CLUSTER_NAME = "thiru-cluster-1"
+        AWS_ACCESS_KEY_ID = credentials('jide-access-key-id')
+        AWS_SECRET_ACCESS_KEY = credentials('jide-secret-access-key')
+        CLUSTER_NAME = "jide-cluster-1"
         API_ENDPOINT = "http://learn-api.webykart.in"
     }
 
@@ -19,7 +19,7 @@ pipeline {
                 git(
                     url: "${GIT_REPO}",
                     branch: "main",
-                    credentialsId: 'thiru-github-access'
+                    credentialsId: 'jide-github-access'
                 )
             }
         }
